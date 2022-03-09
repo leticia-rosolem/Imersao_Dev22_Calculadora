@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title> Imersão Dev Alura - Aula 01</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">
+      Resultado Final dos Exames</h1>
+      <p class="page-subtitle">
+      Descubra qual a sua média de nota de todas as provas!
+      </p>
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+
+        
+  
+  <script>
+  var nome = "Larissa"
+var notaDoPrimeiroBimestre = 9
+var notaDoSegundoBimestre = 7
+var notaDoTerceiroBimestre = 7
+var notaDoQuartoBimestre = 6
+
+var notaFinal = (notaDoPrimeiroBimestre + notaDoSegundoBimestre + notaDoTerceiroBimestre + notaDoQuartoBimestre) / 4
+
+var notaFixada = notaFinal.toFixed(1)
+
+var notaStatus
+
+console.log("Bem vindo " + nome)
+console.log(notaFixada)
+console.log("Sua média final foi de " + notaFixada)
+
+if (notaFixada < 7){
+  console.log ("Reprovado(a)"),
+  notaStatus = "Reprovado(a)"
+}
+if (notaFixada >= 7){
+  console.log ("Aprovado(a)! Parabéns pela aprovação!"),
+  notaStatus = "Aprovado(a)! Parabéns pela aprovação!"
+} 
+
+
+
+  </script>
+    
+          <div class="gatinho">
+        <script>
+      document.write("Bem vindo, " + nome + "!" + "<br>")
+document.write("Sua média foi de " + notaFixada + "!" + "<br>")
+       document.write ( "Você foi " + notaStatus)
+          </script>
+      </div> 
+  
+  </body>
+</html>
